@@ -245,21 +245,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-.about-img-wrapper {
-    position: relative;
-    padding: 20px; /* Symmetric padding to ensure perfect grid alignment on both mobile & desktop */
-}
 
-.about-img-accent {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 35px;
-    bottom: 35px;
-    border: 3px solid var(--accent-gold);
-    border-radius: 12px;
-    z-index: 0;
-}
 
 /* ==========================================================================
    PRODUCTS SECTION
@@ -649,10 +635,7 @@ html[dir="rtl"] .hero-badge {
     text-align: right;
 }
 
-html[dir="rtl"] .about-img-accent {
-    left: 35px;
-    right: 5px;
-}
+
 
 html[dir="rtl"] .product-badge {
     left: 15px;
