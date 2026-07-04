@@ -246,17 +246,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-img-wrapper {
-    padding: 15px;
+    position: relative;
+    padding: 25px; /* Increase wrapper padding for safety and breathing room */
 }
 
 .about-img-accent {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 30px;
-    bottom: 30px;
-    border: 5px solid var(--accent-gold);
-    border-radius: 8px;
+    top: 10px;
+    left: 10px;
+    right: 40px;
+    bottom: 40px;
+    border: 3px solid var(--accent-gold);
+    border-radius: 12px;
     z-index: 0;
 }
 
@@ -649,8 +650,8 @@ html[dir="rtl"] .hero-badge {
 }
 
 html[dir="rtl"] .about-img-accent {
-    left: 30px;
-    right: 0;
+    left: 40px;
+    right: 10px;
 }
 
 html[dir="rtl"] .product-badge {
@@ -696,5 +697,32 @@ html[dir="rtl"] .dropdown-menu {
 @media (max-width: 991.98px) {
     html[dir="rtl"] .nav-link {
         margin-right: 0;
+    }
+}
+
+/* ==========================================================================
+   DESKTOP VIEWPORTS (992px and above)
+   ========================================================================== */
+@media (min-width: 992px) {
+    .about-img-wrapper {
+        padding: 30px 0 0 30px; /* Flush on right/bottom to align with container grid */
+    }
+
+    .about-img-accent {
+        top: 0;
+        left: 0;
+        right: 40px; /* Overlaps 10px under image */
+        bottom: 40px; /* Overlaps 10px under image */
+    }
+
+    html[dir="rtl"] .about-img-wrapper {
+        padding: 30px 30px 0 0; /* Mirror padding for Arabic direction */
+    }
+
+    html[dir="rtl"] .about-img-accent {
+        top: 0;
+        right: 0;
+        left: 40px;
+        bottom: 40px;
     }
 }
