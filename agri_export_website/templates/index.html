@@ -1,0 +1,321 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ t('Brand Main') }} {{ t('Brand Sub') }}
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero-section text-white d-flex align-items-center">
+    <div class="hero-overlay">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-xl-6 text-start">
+                    <span class="hero-badge text-uppercase mb-3 d-inline-block">{{ t('Hero Badge') }}</span>
+                    <h1 class="hero-title mb-3">
+                        {{ t('Hero Title Line 1') }} <br>
+                        <span class="text-accent">{{ t('Hero Title Line 2') }}</span>
+                    </h1>
+                    <p class="hero-text mb-4">
+                        {{ t('Hero Description') }}
+                    </p>
+                    <div class="hero-buttons d-flex flex-wrap gap-3">
+                        <a href="#products" class="btn btn-gold btn-lg px-4 py-3">{{ t('Explore Products') }}</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-3">{{ t('Send Inquiry') }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section py-6">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <div class="about-tag text-uppercase mb-2">{{ t('Who We Are') }}</div>
+                <h2 class="section-title mb-4">{{ t('Cultivating Trust') }}</h2>
+                <p class="lead-text mb-3">
+                    {{ t('About Description') }}
+                </p>
+                <p class="body-text mb-4">
+                    {{ t('About Body') }}
+                </p>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <div class="value-item d-flex align-items-center gap-2">
+                            <span class="value-icon">✓</span>
+                            <span>{{ t('Direct Sourcing') }}</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="value-item d-flex align-items-center gap-2">
+                            <span class="value-icon">✓</span>
+                            <span>{{ t('Global Standards') }}</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="value-item d-flex align-items-center gap-2">
+                            <span class="value-icon">✓</span>
+                            <span>{{ t('Traceability') }}</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="value-item d-flex align-items-center gap-2">
+                            <span class="value-icon">✓</span>
+                            <span>{{ t('Cold Chain Integrity') }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-img-wrapper position-relative">
+                    <div class="about-img-accent"></div>
+                    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80"
+                        alt="Fresh green agriculture fields" class="img-fluid rounded shadow-lg position-relative z-1">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="products-section py-6 bg-light-green">
+    <div class="container">
+        <div class="text-center max-w-xl mx-auto mb-5">
+            <span class="about-tag text-uppercase d-block mb-2">{{ t('Our Portfolio') }}</span>
+            <h2 class="section-title">{{ t('Premium Agricultural Products') }}</h2>
+            <p class="section-subtitle text-muted mt-2">
+                {{ t('Products Subtitle') }}
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Fruits -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card product-card h-100">
+                    <div class="product-img-container">
+                        <img src="/static/images/product_fruits.jpg"
+                            class="card-img-top product-img" alt="{{ t('Fruits Badge') }}">
+                        <span class="product-badge">{{ t('Fruits Badge') }}</span>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="product-name mb-2">{{ t('Fresh Fruits Name') }}</h4>
+                        <p class="product-desc flex-grow-1">{{ t('Fruits Desc') }}</p>
+                        <a href="#contact" class="btn btn-sm btn-outline-forest mt-3">{{ t('Request Specs') }}</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vegetables -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card product-card h-100">
+                    <div class="product-img-container">
+                        <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top product-img" alt="{{ t('Vegetables Badge') }}">
+                        <span class="product-badge">{{ t('Vegetables Badge') }}</span>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="product-name mb-2">{{ t('Fresh Vegetables Name') }}</h4>
+                        <p class="product-desc flex-grow-1">{{ t('Vegetables Desc') }}</p>
+                        <a href="#contact" class="btn btn-sm btn-outline-forest mt-3">{{ t('Request Specs') }}</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spices -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card product-card h-100">
+                    <div class="product-img-container">
+                        <img src="/static/images/product_spices.jpg"
+                            class="card-img-top product-img" alt="{{ t('Spices Badge') }}">
+                        <span class="product-badge">{{ t('Spices Badge') }}</span>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="product-name mb-2">{{ t('Authentic Spices Name') }}</h4>
+                        <p class="product-desc flex-grow-1">{{ t('Spices Desc') }}</p>
+                        <a href="#contact" class="btn btn-sm btn-outline-forest mt-3">{{ t('Request Specs') }}</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Organic -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card product-card h-100">
+                    <div class="product-img-container">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top product-img" alt="{{ t('Organic Badge') }}">
+                        <span class="product-badge">{{ t('Organic Badge') }}</span>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="product-name mb-2">{{ t('Organic Produce Name') }}</h4>
+                        <p class="product-desc flex-grow-1">{{ t('Organic Desc') }}</p>
+                        <a href="#contact" class="btn btn-sm btn-outline-forest mt-3">{{ t('Request Specs') }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Us Section -->
+<section id="why-us" class="why-section py-6">
+    <div class="container">
+        <div class="text-center max-w-xl mx-auto mb-5">
+            <span class="about-tag text-uppercase d-block mb-2">{{ t('Our Edge') }}</span>
+            <h2 class="section-title">{{ t('Why Global Choose') }}</h2>
+            <p class="section-subtitle text-muted mt-2">
+                {{ t('Why Us Subtitle') }}
+            </p>
+        </div>
+
+        <div class="row g-4 text-center">
+            <!-- Global Reach -->
+            <div class="col-md-6 col-lg-3">
+                <div class="why-card p-4">
+                    <div class="why-icon-box mb-3">
+                        <span class="why-icon-emoji">🌎</span>
+                    </div>
+                    <h5 class="why-title">{{ t('Global Reach Title') }}</h5>
+                    <p class="why-desc text-muted">{{ t('Global Reach Desc') }}</p>
+                </div>
+            </div>
+
+            <!-- Quality Assurance -->
+            <div class="col-md-6 col-lg-3">
+                <div class="why-card p-4">
+                    <div class="why-icon-box mb-3">
+                        <span class="why-icon-emoji">✅</span>
+                    </div>
+                    <h5 class="why-title">{{ t('Rigorous Standards Title') }}</h5>
+                    <p class="why-desc text-muted">{{ t('Rigorous Standards Desc') }}</p>
+                </div>
+            </div>
+
+            <!-- Reliable Logistics -->
+            <div class="col-md-6 col-lg-3">
+                <div class="why-card p-4">
+                    <div class="why-icon-box mb-3">
+                        <span class="why-icon-emoji">🚢</span>
+                    </div>
+                    <h5 class="why-title">{{ t('Cold Chain Title') }}</h5>
+                    <p class="why-desc text-muted">{{ t('Cold Chain Desc') }}</p>
+                </div>
+            </div>
+
+            <!-- Trusted Partnerships -->
+            <div class="col-md-6 col-lg-3">
+                <div class="why-card p-4">
+                    <div class="why-icon-box mb-3">
+                        <span class="why-icon-emoji">🤝</span>
+                    </div>
+                    <h5 class="why-title">{{ t('Ethical Sourcing Title') }}</h5>
+                    <p class="why-desc text-muted">{{ t('Ethical Sourcing Desc') }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section py-6 bg-light-green">
+    <div class="container">
+        <!-- Centered Section Header -->
+        <div class="text-center max-w-xl mx-auto mb-5">
+            <span class="about-tag text-uppercase d-block mb-2">{{ t('Get In Touch') }}</span>
+            <h2 class="section-title">{{ t('Start Your Inquiry') }}</h2>
+            <p class="section-subtitle text-muted mt-2">
+                {{ t('Inquiry Subtitle') }}
+            </p>
+        </div>
+
+        <div class="row g-5 justify-content-between">
+            <!-- Left Column: Contact Info -->
+            <div class="col-lg-4 col-md-5">
+                <div class="contact-info-list d-flex flex-column gap-3 h-100 justify-content-center">
+                    <div class="contact-info-item d-flex align-items-center gap-3">
+                        <span class="contact-info-icon">📍</span>
+                        <div>
+                            <strong class="d-block text-forest">{{ t('Corporate Office') }}</strong>
+                            <span class="text-muted">{{ t('Address') }}</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item d-flex align-items-center gap-3">
+                        <span class="contact-info-icon">✉️</span>
+                        <div>
+                            <strong class="d-block text-forest">{{ t('Email Address') }}</strong>
+                            <a href="mailto:geoseasonalexports@gmail.com" class="text-muted text-decoration-none">geoseasonalexports@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item d-flex align-items-center gap-3">
+                        <span class="contact-info-icon">📞</span>
+                        <div>
+                            <strong class="d-block text-forest">{{ t('Direct Line') }}</strong>
+                            <a href="tel:+919113995083" class="text-muted text-decoration-none">+91 911 399 5083</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Inquiry Form -->
+            <div class="col-lg-7 col-md-7">
+                <div class="contact-form-card p-3 p-sm-4 p-md-5 rounded shadow">
+                    <h4 class="mb-4 text-forest fw-semibold">{{ t('Inquiry Request') }}</h4>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label class="form-label text-muted small">{{ t('Name Label') }}</label>
+                                    <input type="text" class="form-control form-control-custom" placeholder="{{ t('Name Label') }}"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label class="form-label text-muted small">{{ t('Email Label') }}</label>
+                                    <input type="email" class="form-control form-control-custom"
+                                        placeholder="{{ t('Email Label') }}" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label class="form-label text-muted small">{{ t('Country Label') }}</label>
+                                    <input type="text" class="form-control form-control-custom" placeholder="{{ t('Country Placeholder') }}"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label class="form-label text-muted small">{{ t('Product Label') }}</label>
+                                    <select class="form-select form-control-custom">
+                                        <option>{{ t('Fresh Fruits Option') }}</option>
+                                        <option>{{ t('Fresh Vegetables Option') }}</option>
+                                        <option>{{ t('Spices Option') }}</option>
+                                        <option>{{ t('Organic Produce Option') }}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group mb-4">
+                                    <label class="form-label text-muted small">{{ t('Message Label') }}</label>
+                                    <textarea rows="4" class="form-control form-control-custom"
+                                        placeholder="{{ t('Message Placeholder') }}"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-forest w-100 py-3 fw-medium">
+                                    {{ t('Submit Inquiry') }}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

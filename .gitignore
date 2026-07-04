@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Virtual environments
+agri_export_website/export_env/
+export_env/
+venv/
+.venv/
+env/
+.env/
+
+# Editor / System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Agent files
+.gemini/
+.agents/
+*.log
