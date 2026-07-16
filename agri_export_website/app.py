@@ -29,7 +29,7 @@ USER_EMAIL_BODIES = {
         "Best regards,\n"
         "Geo Seasonal Exports Team\n"
         "Corporate Office: Bengaluru, Karnataka, India\n"
-        "Email: geoseasonalexports@gmail.com\n"
+        "Email: contact@geoseasonalexports.com\n"
         "Direct Line: +91 911 399 5083"
     ),
     'es': (
@@ -43,7 +43,7 @@ USER_EMAIL_BODIES = {
         "Atentamente,\n"
         "El equipo de Geo Seasonal Exports\n"
         "Oficina Corporativa: Bengaluru, Karnataka, India\n"
-        "Email: geoseasonalexports@gmail.com\n"
+        "Email: contact@geoseasonalexports.com\n"
         "Línea Directa: +91 911 399 5083"
     ),
     'de': (
@@ -57,7 +57,7 @@ USER_EMAIL_BODIES = {
         "Mit freundlichen Grüßen,\n"
         "Ihr Geo Seasonal Exports Team\n"
         "Hauptsitz: Bengaluru, Karnataka, Indien\n"
-        "E-Mail: geoseasonalexports@gmail.com\n"
+        "E-Mail: contact@geoseasonalexports.com\n"
         "Telefon: +91 911 399 5083"
     ),
     'ar': (
@@ -71,7 +71,7 @@ USER_EMAIL_BODIES = {
         "أطيب التحيات،\n"
         "فريق جيو سيزونال للصادرات\n"
         "المكتب الرئيسي: بنغالور، كارناتاكا، الهند\n"
-        "البريد الإلكتروني: geoseasonalexports@gmail.com\n"
+        "البريد الإلكتروني: contact@geoseasonalexports.com\n"
         "الهاتف المباشر: +91 911 399 5083"
     ),
     'zh': (
@@ -85,7 +85,7 @@ USER_EMAIL_BODIES = {
         "顺祝商祺，\n"
         "Geo Seasonal Exports 团队\n"
         "公司总部：印度卡纳塔克邦班加罗尔\n"
-        "电子邮件：geoseasonalexports@gmail.com\n"
+        "电子邮件：contact@geoseasonalexports.com\n"
         "热线电话：+91 911 399 5083"
     )
 }
@@ -164,7 +164,7 @@ def submit_inquiry():
         lang = 'en'
 
     # Admin notification settings
-    admin_receiver = os.environ.get('CONTACT_RECEIVER_EMAIL') or os.environ.get('SMTP_USERNAME', 'geoseasonalexports@gmail.com')
+    admin_receiver = os.environ.get('CONTACT_RECEIVER_EMAIL') or os.environ.get('SMTP_USERNAME', 'contact@geoseasonalexports.com')
     admin_subject = f"New Inquiry Request: {product} from {name} ({country})"
     admin_body = (
         f"New Inquiry Request Received:\n\n"
