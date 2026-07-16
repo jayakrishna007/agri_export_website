@@ -69,7 +69,10 @@ TRANSLATIONS = {
         'Organic Produce Option': 'Organic Produce',
         'Message Label': 'Detailed Message / Specifications Required',
         'Message Placeholder': 'Specify quantity, packing requirements, destination port, etc.',
-        'Submit Inquiry': 'Submit Inquiry'
+        'Submit Inquiry': 'Submit Inquiry',
+        'Inquiry Success': 'Thank you! Your inquiry has been sent successfully. We will get back to you shortly.',
+        'Inquiry Error': 'Something went wrong. Please try again or contact us directly.',
+        'Sending': 'Sending...'
     },
     'es': {
         'Brand Main': 'Geo Seasonal',
@@ -139,7 +142,10 @@ TRANSLATIONS = {
         'Organic Produce Option': 'Productos orgánicos',
         'Message Label': 'Mensaje detallado / Especificaciones requeridas',
         'Message Placeholder': 'Especifique cantidad, requisitos de embalaje, puerto de destino, etc.',
-        'Submit Inquiry': 'Enviar consulta'
+        'Submit Inquiry': 'Enviar consulta',
+        'Inquiry Success': '¡Gracias! Su consulta ha sido enviada con éxito. Nos pondremos en contacto con usted en breve.',
+        'Inquiry Error': 'Algo salió mal. Por favor, inténtelo de nuevo o contáctenos directamente.',
+        'Sending': 'Enviando...'
     },
     'de': {
         'Brand Main': 'Geo Seasonal',
@@ -209,7 +215,10 @@ TRANSLATIONS = {
         'Organic Produce Option': 'Bio-Erzeugnisse',
         'Message Label': 'Detaillierte Nachricht / Erforderliche Spezifikationen',
         'Message Placeholder': 'Geben Sie Menge, Verpackungsanforderungen, Bestimmungshafen usw. an.',
-        'Submit Inquiry': 'Anfrage absenden'
+        'Submit Inquiry': 'Anfrage absenden',
+        'Inquiry Success': 'Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet. Wir werden uns in Kürze mit Ihnen in Verbindung setzen.',
+        'Inquiry Error': 'Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.',
+        'Sending': 'Senden...'
     },
     'ar': {
         'Brand Main': 'جيو سيزونال',
@@ -279,7 +288,10 @@ TRANSLATIONS = {
         'Organic Produce Option': 'منتجات عضوية',
         'Message Label': 'رسالة تفصيلية / المواصفات المطلوبة',
         'Message Placeholder': 'يرجى تحديد الكمية، متطلبات التعبئة، ميناء الوصول، إلخ.',
-        'Submit Inquiry': 'إرسال الاستفسار'
+        'Submit Inquiry': 'إرسال الاستفسار',
+        'Inquiry Success': 'شكرًا لك! تم إرسال استفسارك بنجاح. وسنعاود الاتصال بك قريبًا.',
+        'Inquiry Error': 'حدث خطأ ما. يرجى المحاولة مرة أخرى أو الاتصال بنا مباشرة.',
+        'Sending': 'جاري الإرسال...'
     },
     'zh': {
         'Brand Main': 'Geo Seasonal',
@@ -349,6 +361,9 @@ TRANSLATIONS = {
         'Organic Produce Option': '有机农产品',
         'Message Label': '详细信息 / 规格要求',
         'Message Placeholder': '指定数量、包装要求、目的港等。',
-        'Submit Inquiry': '提交询盘'
+        'Submit Inquiry': '提交询盘',
+        'Inquiry Success': '谢谢！您的查询已成功发送。我们将很快与您联系。',
+        'Inquiry Error': '出错了。请重试或直接与我们联系。',
+        'Sending': '发送中...'
     }
 }
