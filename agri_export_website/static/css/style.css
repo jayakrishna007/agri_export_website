@@ -53,14 +53,14 @@ h1, h2, h3, h4, h5, h6 {
    NAVBAR
    ========================================================================== */
 .navbar {
-    background-color: rgba(28, 28, 28, 0.95) !important;
+    background-color: rgba(255, 255, 255, 0.95) !important;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(241, 218, 138, 0.15);
+    border-bottom: 1px solid rgba(19, 34, 26, 0.08);
     transition: var(--transition-smooth);
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .company-logo {
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .company-main {
-    color: #ffffff;
+    color: var(--primary-forest);
     font-family: 'Outfit', sans-serif;
     font-size: 1.8rem;
     font-weight: 800;
@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .company-sub {
-    color: var(--accent-gold);
+    color: var(--secondary-emerald);
     font-family: 'Outfit', sans-serif;
     font-size: 0.8rem;
     font-weight: 600;
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link {
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: var(--primary-forest) !important;
     font-size: 1.05rem;
     font-weight: 600;
     margin-left: 20px;
@@ -120,12 +120,12 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--accent-gold);
+    background-color: var(--secondary-emerald);
     transition: var(--transition-smooth);
 }
 
 .nav-link:hover {
-    color: var(--accent-gold) !important;
+    color: var(--secondary-emerald) !important;
 }
 
 .nav-link:hover::after {
@@ -494,7 +494,7 @@ footer p {
     .nav-link {
         margin-left: 0;
         padding: 10px 15px !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        border-bottom: 1px solid rgba(19, 34, 26, 0.08);
     }
 
     .nav-link::after {
@@ -502,12 +502,12 @@ footer p {
     }
 
     .navbar-collapse {
-        background-color: #1c1c1c;
+        background-color: #ffffff;
         margin-top: 10px;
         padding: 10px 15px;
         border-radius: 8px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        border: 1px solid rgba(241, 218, 138, 0.15);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(19, 34, 26, 0.1);
     }
 
     .hero-section {
@@ -652,29 +652,29 @@ html[dir="rtl"] .dropdown-menu {
 
 /* Language Dropdown Custom Premium Styling */
 .dropdown-menu {
-    background-color: #1c1c1c;
-    border: 1px solid rgba(241, 218, 138, 0.15);
+    background-color: #ffffff;
+    border: 1px solid rgba(19, 34, 26, 0.1);
     border-radius: 8px;
     padding: 8px 0;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .dropdown-item {
     font-size: 0.95rem;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--primary-forest);
     padding: 8px 20px;
     transition: var(--transition-smooth);
 }
 
 .dropdown-item:hover {
-    background-color: rgba(241, 218, 138, 0.1);
-    color: var(--accent-gold);
+    background-color: var(--bg-mint);
+    color: var(--secondary-emerald);
 }
 
 .dropdown-item.active, .dropdown-item:active {
-    background-color: var(--accent-gold) !important;
-    color: #1c1c1c !important;
+    background-color: var(--secondary-emerald) !important;
+    color: #ffffff !important;
 }
 
 @media (max-width: 991.98px) {
