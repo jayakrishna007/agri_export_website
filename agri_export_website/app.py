@@ -146,6 +146,26 @@ def inject_translate():
 def home():
     return render_template("index.html")
 
+@app.route("/robots.txt")
+def robots():
+    response = make_response(f"User-agent: *\nAllow: /\nSitemap: {request.url_root}sitemap.xml\n")
+    response.headers["Content-Type"] = "text/plain"
+    return response
+
+@app.route("/sitemap.xml")
+def sitemap():
+    xml_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{request.url_root}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>"""
+    response = make_response(xml_content)
+    response.headers["Content-Type"] = "application/xml"
+    return response
+
 @app.route("/submit-inquiry", methods=["POST"])
 def submit_inquiry():
     name = request.form.get("name", "").strip()
