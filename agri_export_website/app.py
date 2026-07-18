@@ -7,6 +7,11 @@ from translations import TRANSLATIONS
 
 app = Flask(__name__)
 
+# Trust X-Forwarded-Proto and X-Forwarded-Host headers when running behind a proxy (like Vercel)
+from werkzeug.middleware.proxy_fix import ProxyFix
+app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
+
+
 # Translated subject lines for user confirmation auto-reply
 USER_EMAIL_SUBJECTS = {
     'en': "We have received your inquiry - Geo Seasonal Exports",
